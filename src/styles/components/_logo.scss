@@ -1,6 +1,11 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts/' as *;
 
 .logo {
   width: $logo-mobile-width;
   height: $logo-mobile-height;
+
+  @include breakpoint(xl) {
+    width: $logo-desktop-width;
+    height: $logo-desktop-height;
+  }
 }
