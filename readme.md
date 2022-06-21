@@ -45,8 +45,8 @@ Mobile design VS Mobile solution<br>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Base Apparell Landing Page Solution URL](https://www.frontendmentor.io/solutions/typescript-webpack-scss-VNOxJQr4Ny)
+- Live Site URL: [Frontend Mentor Base Apparell Landing Page Live site](https://fem-base-apparel-landing-page.netlify.app/)
 
 ## My process
 
