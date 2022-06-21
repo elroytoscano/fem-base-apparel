@@ -133,7 +133,7 @@
     }
 
     &:hover {
-      background-color: $button-bg;
+      background: $button-bg;
       box-shadow: $btn-hover-box-shadow;
     }
 
@@ -143,8 +143,8 @@
     }
 
     &:active {
-    background: $button-bg-active,$btn-hover-bg;
-    box-shadow: $btn-hover-box-shadow,$btn-box-shadow;
+      background: $button-bg-active, $btn-hover-bg;
+      box-shadow: $btn-hover-box-shadow, $btn-box-shadow;
     }
   }
 
