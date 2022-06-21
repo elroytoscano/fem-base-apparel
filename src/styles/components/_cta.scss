@@ -1,0 +1,167 @@
+@use '../abstracts/' as *;
+
+.cta {
+  display: flex;
+  position: relative;
+  margin-bottom: $form-mobile-margin-bottom;
+
+  @include breakpoint(sm) {
+    min-width: $hero-content-mobile-width;
+    margin: 0 auto;
+  }
+
+  &__input-element {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &-input {
+      border: $form-field-border;
+      font-weight: $form-text-font-weight;
+      font-size: $form-text-font-size;
+      line-height: $form-text-line-height;
+      padding-left: $form-text-padding-left;
+      padding-top: $form-text-padding-top;
+      padding-bottom: $form-text-padding-bottom;
+      color: $brand-black;
+      border-radius: $form-border-radius;
+
+      &:focus,
+      &:active {
+        border: $form-field-border !important;
+      }
+
+      &:focus ~ label {
+        padding-left: rem(2);
+        padding-right: rem(4);
+        top: (-1 * $form-text-padding-top)-0.125;
+        background-color: white;
+        font-size: $form-text-focus-font-size;
+        padding-bottom: rem(0);
+      }
+
+      &:not(:placeholder-shown) ~ label {
+        padding-left: rem(2);
+        padding-right: rem(4);
+        top: (-1 * $form-text-padding-top)-0.125;
+        background-color: white;
+        font-size: $form-text-focus-font-size;
+        padding-bottom: rem(0);
+      }
+
+      &.error {
+        border: $form-field-error-border;
+      }
+
+      @include breakpoint(xl) {
+        font-size: $form-text-desktop-font-size;
+        padding-top: $form-text-desktop-padding-top;
+        padding-bottom: $form-text-desktop-padding-bottom;
+      }
+    }
+
+    &-text {
+      transition: $transition;
+      position: absolute;
+      font-weight: $form-text-font-weight;
+      font-size: $form-text-font-size;
+      line-height: $form-text-line-height;
+      left: $form-text-padding-left;
+      top: $form-text-padding-top + 0.14;
+      padding-bottom: $form-text-padding-bottom;
+      color: $brand-base;
+      cursor: text;
+
+      &:focus {
+        background-color: $brand-white;
+        top: -1 * $form-text-padding-top + 0.125;
+        font-size: $form-text-focus-font-size;
+      }
+
+      @include breakpoint(xl) {
+        top: $form-text-desktop-padding-top;
+      }
+    }
+
+    .validation-icon {
+      position: absolute;
+      content: url('../assets/icon-error.svg');
+      top: $form-error-top;
+      right: $form-error-right;
+      opacity: 0;
+      transition: $transition;
+
+      @include breakpoint(xl) {
+        right: rem(116);
+        top: $form-text-desktop-padding-top;
+      }
+    }
+
+    .validation-text {
+      padding-top: 0.5rem;
+      padding-left: 1.65rem;
+      font-size: 13px;
+      color: $brand-error;
+      opacity: 0;
+      transition: $transition;
+    }
+
+    .validation-icon .error {
+      opacity: 1;
+    }
+  }
+
+  &__submitBtn {
+    right: -1px;
+    top: 1.25px;
+    position: absolute;
+    width: $submitBtn-mobile-width;
+    height: $submitBtn-mobile-height;
+    border-radius: $submitBtn-mobile-border-radius;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $button-bg;
+    cursor: pointer;
+    box-shadow: $btn-box-shadow;
+
+    img {
+      width: $submitBtn-icon-mobile-width;
+      height: $submitBtn-icon-mobile-height;
+    }
+
+    &:hover {
+      background-color: $button-bg;
+      box-shadow: $btn-hover-box-shadow;
+    }
+
+    @include breakpoint(xl) {
+      width: $submitBtn-desktop-width;
+      height: $submitBtn-desktop-height;
+    }
+
+    &:active {
+    background: $button-bg-active,$btn-hover-bg;
+    box-shadow: $btn-hover-box-shadow,$btn-box-shadow;
+    }
+  }
+
+  @include breakpoint(xl) {
+    width: $hero-content-desktop-width;
+    margin-top: $form-desktop-margin-top;
+  }
+
+  .validation-text .error {
+    opacity: 1 !important;
+  }
+
+  .error {
+    opacity: 1 !important;
+  }
+
+  .error {
+    opacity: 1;
+  }
+}

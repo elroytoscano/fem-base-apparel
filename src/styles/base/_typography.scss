@@ -1,0 +1,20 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/colors' as *;
+
+$header-mobile-font-size: rem(40);
+$header-mobile-line-height: rem(42);
+$header-mobile-letter-spacing: rem(10.83);
+$header-initial-mobile-font-weight: 300;
+$header-text-mobile-font-weight: 600;
+$header-desktop-font-size: rem(64);
+$header-desktop-line-height: rem(71);
+$header-desktop-letter-spacing: rem(17.32);
+$header-desktop-font-weight: 600;
+
+$subtext-mobile-font-size: rem(14);
+$subtext-mobile-line-height: rem(22);
+$subtext-mobile-font-weight: 400;
+$subtext-mobile-margin-bottom: rem(32);
+$subtext-desktop-font-size: rem(16);
+$subtext-desktop-line-height: rem(28);
+$subtext-desktop-font-weight: 400;

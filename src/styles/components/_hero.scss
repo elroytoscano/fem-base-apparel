@@ -1,0 +1,107 @@
+@use '../abstracts/' as *;
+@use '../base/typography' as *;
+
+.hero {
+  &__img {
+    width: 100%;
+    height: $hero-img-height-mobile;
+    background: url('../assets/hero-mobile.jpg') center/cover no-repeat;
+    margin: 0 auto;
+
+    @include breakpoint(sm) {
+      width: $hero-img-width-mobile;
+      margin: 0 auto;
+    }
+
+    @include breakpoint(xl) {
+      float: right;
+      background: url('../assets/hero-desktop.jpg') center/cover no-repeat;
+      width: $hero-img-width-desktop;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    margin-top: rem(64);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 $hero-content-mobile-padding;
+
+    @include breakpoint(xl) {
+      margin-top: auto;
+      margin-bottom: auto;
+      height: 100%;
+      width: $hero-content-desktop-width;
+      background: url('../assets/bg-pattern-desktop.svg') center/cover no-repeat;
+    }
+
+    &-text {
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      gap: $hero-content-mobile-gap;
+      color: $brand-base;
+
+      &-title {
+        color: $brand-black;
+        font-weight: $header-text-mobile-font-weight;
+        text-transform: uppercase;
+        font-size: $header-mobile-font-size;
+        letter-spacing: $header-mobile-letter-spacing;
+        max-width: $hero-content-mobile-width;
+
+        @include breakpoint(xl) {
+          font-size: $header-desktop-font-size;
+        }
+        &-initial {
+          font-weight: $header-initial-mobile-font-weight;
+          display: block;
+          color: $brand-base;
+        }
+      }
+
+      &-subtext {
+        margin: 0 auto;
+        line-height: $subtext-mobile-line-height;
+        font-size: $subtext-mobile-font-size;
+        font-weight: $subtext-mobile-font-weight;
+      }
+
+      @include breakpoint(xl) {
+        text-align: left;
+        width: $hero-content-desktop-width;
+      }
+
+      &-subtext {
+        max-width: $hero-content-mobile-subtext-width;
+        line-height: $subtext-mobile-line-height;
+        font-weight: $subtext-mobile-font-weight;
+        font-size: $subtext-mobile-font-size;
+        margin-bottom: $subtext-mobile-margin-bottom;
+
+        @include breakpoint(xl) {
+          margin: 0;
+          max-width: $hero-content-desktop-width;
+          line-height: $subtext-desktop-line-height;
+          font-size: $subtext-desktop-font-size;
+          font-weight: $subtext-desktop-font-weight;
+        }
+      }
+    }
+
+    @include breakpoint(xl) {
+      float: left;
+      text-align: left;
+      width: $hero-content-desktop-width;
+      padding-left: $hero-content-padding-left;
+    }
+  }
+
+  @include breakpoint(xl) {
+    height: 100vh;
+  }
+}

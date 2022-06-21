@@ -1,0 +1,54 @@
+@use 'functions' as *;
+@use 'colors' as *;
+
+$logo-padding-mobile: rem(32);
+$logo-padding-top-desktop: rem(65);
+$logo-padding-left-desktop: rem(165);
+
+$logo-mobile-width: rem(100);
+$logo-mobile-height: rem(21);
+$logo-desktop-width: rem(158);
+$logo-desktop-height: rem(33);
+
+$hero-img-width-mobile: rem(376);
+$hero-img-height-mobile: rem(250);
+$hero-img-width-desktop: rem(610);
+$hero-img-height-desktop: rem(800);
+
+$hero-content-desktop-width: rem(445);
+$hero-content-height: rem(404);
+$hero-content-padding-left: rem(165);
+$hero-content-mobile-width: rem(311);
+$hero-content-mobile-padding: rem(32);
+$hero-content-mobile-gap: rem(16);
+$hero-content-mobile-subtext-width: rem(311);
+$hero-content-mobile-padding-horizontal: rem(32);
+
+$form-text-font-weight: 400;
+$form-text-font-size: rem(14);
+$form-text-desktop-font-size: rem(16);
+$form-text-line-height: rem(28);
+$form-text-padding-top: rem(10);
+$form-text-padding-bottom: rem(10);
+$form-text-desktop-padding-top: rem(15);
+$form-text-desktop-padding-bottom: rem(13);
+$form-text-padding-left: rem(24);
+$form-field-border: 1px solid $brand-base;
+$form-field-error-border: 1px solid $brand-error;
+$form-text-focus-font-size: rem(10);
+$form-border-radius: rem(28);
+$form-mobile-margin-bottom: rem(72);
+$form-desktop-margin-top: rem(40);
+$form-error-top: rem(13);
+$form-error-right: rem(72);
+$form-error-text-top: rem(2);
+$form-error-text-right: rem(2);
+$transition: 0.3s all ease-in;
+
+$submitBtn-mobile-width: rem(64);
+$submitBtn-mobile-height: rem(48);
+$submitBtn-mobile-border-radius: rem(28);
+$submitBtn-icon-mobile-width: rem(8.84);
+$submitBtn-icon-mobile-height: rem(17.67);
+$submitBtn-desktop-width: rem(100);
+$submitBtn-desktop-height: rem(56);

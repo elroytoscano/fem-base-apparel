@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+.footer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: rem(8) 0;
+  background-color: $brand-base;
+  .attribution {
+    font-size: rem(16);
+    display: inline-block;
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}

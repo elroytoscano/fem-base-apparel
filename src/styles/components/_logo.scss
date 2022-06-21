@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as *;
+
+.logo {
+  width: $logo-mobile-width;
+  height: $logo-mobile-height;
+}

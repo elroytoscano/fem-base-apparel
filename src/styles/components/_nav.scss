@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.navbar {
+  padding: $logo-padding-mobile;
+  width: 100%;
+
+  @include breakpoint(xl) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: $logo-padding-left-desktop;
+    padding-top: $logo-padding-top-desktop;
+  }
+}

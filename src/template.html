@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <h1 class="sr">Base Apparel</h1>
+    <nav class="navbar">
+      <img src="./assets/logo.svg" alt="Base Apparel Logo" class="logo" />
+    </nav>
+    <main>
+      <div class="hero">
+        <div class="hero__img"></div>
+        <div class="hero__content">
+          <article class="hero__content-text">
+            <h2 class="hero__content-text-title">
+              <span class="hero__content-text-title-initial">We're</span>coming
+              soon
+            </h2>
+            <p class="hero__content-text-subtext">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+          </article>
+          <form class="cta">
+            <span class="cta__input-element">
+              <input
+                name="email"
+                id="email"
+                type="text"
+                class="cta__input-element-input"
+                required
+                placeholder=" "
+              />
+              <label for="email" class="cta__input-element-text"
+                >Email Address</label
+              >
+              <span id="validation-icon" class="validation-icon"></span>
+              <div id="validation-text" class="validation-text">Error</div>
+            </span>
+            <button id="submitBtn" type="submit" class="cta__submitBtn">
+              <span
+                ><img src="assets/icon-arrow.svg" alt="Submit button"
+              /></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            href="https://www.frontendmentor.io/profile/elroytoscano"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Elroy Toscano</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
