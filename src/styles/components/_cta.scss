@@ -7,7 +7,6 @@
 
   @include breakpoint(sm) {
     min-width: $hero-content-mobile-width;
-    margin: 0 auto;
   }
 
   &__input-element {
@@ -151,6 +150,7 @@
   @include breakpoint(xl) {
     width: $hero-content-desktop-width;
     margin-top: $form-desktop-margin-top;
+    margin-bottom: 0;
   }
 
   .validation-text .error {

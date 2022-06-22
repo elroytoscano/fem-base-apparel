@@ -15,7 +15,7 @@
 
     @include breakpoint(xl) {
       float: right;
-      background: url('../assets/hero-desktop.jpg') center/cover no-repeat;
+      background: url('../assets/hero-desktop.jpg') left bottom/cover no-repeat;
       width: $hero-img-width-desktop;
       height: 100%;
     }
@@ -29,20 +29,20 @@
     padding: 0 $hero-content-mobile-padding;
 
     @include breakpoint(xl) {
-      margin-top: auto;
+      float: left;
+      text-align: left;
+      padding: 0;
+      margin-left: $logo-padding-left-desktop;
+      margin-top: rem(244);
       margin-bottom: auto;
-      height: 100%;
       width: $hero-content-desktop-width;
-      background: url('../assets/bg-pattern-desktop.svg') center/cover no-repeat;
     }
 
     &-text {
-      margin: 0 auto;
       text-align: center;
       display: flex;
       justify-content: center;
       flex-direction: column;
-
       gap: $hero-content-mobile-gap;
       color: $brand-base;
 
@@ -56,6 +56,8 @@
 
         @include breakpoint(xl) {
           font-size: $header-desktop-font-size;
+          width: $hero-content-desktop-width;
+          max-width: none;
         }
         &-initial {
           font-weight: $header-initial-mobile-font-weight;
@@ -64,16 +66,8 @@
         }
       }
 
-      &-subtext {
-        margin: 0 auto;
-        line-height: $subtext-mobile-line-height;
-        font-size: $subtext-mobile-font-size;
-        font-weight: $subtext-mobile-font-weight;
-      }
-
       @include breakpoint(xl) {
         text-align: left;
-        width: $hero-content-desktop-width;
       }
 
       &-subtext {
@@ -85,23 +79,20 @@
 
         @include breakpoint(xl) {
           margin: 0;
-          max-width: $hero-content-desktop-width;
           line-height: $subtext-desktop-line-height;
           font-size: $subtext-desktop-font-size;
           font-weight: $subtext-desktop-font-weight;
+          max-width: $hero-content-desktop-width;
         }
       }
-    }
-
-    @include breakpoint(xl) {
-      float: left;
-      text-align: left;
-      width: $hero-content-desktop-width;
-      padding-left: $hero-content-padding-left;
     }
   }
 
   @include breakpoint(xl) {
     height: 100vh;
+    background: url('../assets/bg-pattern-desktop.svg');
+    background-position: left;
+    background-size: rem(1290) rem(800);
+    background-repeat: no-repeat;
   }
 }
